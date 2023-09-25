@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <title>Alura books</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__menu">
+            <img class="header__menu__logo" alt="Logo" src="./assets/Logo.svg">
+        </div>
+        <div class="header__icons">
+            <img class="icon" alt="Favoritos" src="./assets/Favoritos.svg" />
+            <img class="icon" alt="Compras" src="./assets/Compras.svg" />
+            <img class="icon" alt="Usuario" src="./assets/Usuario.svg" />
+        </div>
+    </header>
+
+    <section class="banner">
+        <p class="banner__title">Já sabe por onde começar?</p>
+        <p class="banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input class="banner__input" type="text" placeholder="Qual será sua próxima leitura?">
+    </section>
+
+    <section class="books">
+        <div class="books__title-box">
+            <h2>Ultimos lançamentos</h2>
+        </div>
+
+        <div class="swiper" pagination-clickable="true" space-between="30">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img class="book-img" src="assets/Guia Front-end.svg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="book-img" src="assets/ApacheKafka.svg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="book-img" src="assets/Javascript.svg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="book-img" src="assets/Lideranc╠ºa.svg">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <div class="card card--flex">
+            <div class="card__body">
+                <div class="card__body__texts">
+                    <p class="card__pretitle">Talvez você também se interesse por...</p>
+                    <p class="card__title">Angular 11 e Firebase</p>
+                    <p class="card__text">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <img class="card__body__image" src="/assets/Angular.svg">
+            </div>
+            <div class="card__footer">
+                <div class="card__footer__icons">
+                    <img src="assets/Favoritos.svg">
+                    <img src="assets/Compras.svg">
+                </div>
+                <a class="card__button">Saiba mais</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="books">
+        <div class="books__title-box">
+            <h2>Ultimos lançamentos</h2>
+        </div>
+
+        <div class="swiper" pagination-clickable="true" space-between="30">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img class="book-img" src="assets/Guia Front-end.svg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="book-img" src="assets/ApacheKafka.svg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="book-img" src="assets/Javascript.svg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="book-img" src="assets/Lideranc╠ºa.svg">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <div class="card card--flex">
+            <div class="card__body">
+                <div class="card__body__texts">
+                    <p class="card__pretitle">Talvez você também se interesse por...</p>
+                    <p class="card__title">Angular 11 e Firebase</p>
+                    <p class="card__text">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <img class="card__body__image" src="/assets/Angular.svg">
+            </div>
+            <div class="card__footer">
+                <div class="card__footer__icons">
+                    <img src="assets/Favoritos.svg">
+                    <img src="assets/Compras.svg">
+                </div>
+                <a class="card__button">Saiba mais</a>
+            </div>
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+
+            loop: true,
+            slidesPerView: 2,
+            centeredSlides:true,
+            spaceBetween: 19,
+            slideToClickedSlide: true,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            clickable: true,
+                type: 'bullets'
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
