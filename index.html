@@ -14,8 +14,39 @@
 
     <header class="header">
         <div class="header__menu">
+            <input class="menu__checkbox" id="checkbox" type="checkbox">
+            <label for="checkbox" class="header__menu-button"></label>
             <img class="header__menu__logo" alt="Logo" src="./assets/Logo.svg">
+            <h1 class="header__title"><strong>Alura</strong>Books</h1>
         </div>
+
+        <div class="categories">
+            <ul class="categories__list">
+                <li>
+                    <input class="menu__checkbox" id="checkbox2" type="checkbox">
+                    <label for="checkbox2" class="header__menu-button--text">Categorias</label>
+                </li>
+                <li>
+                    <a href="#">Favoritos</a>
+                </li>
+                <li>
+                    <a href="#">Minha estante</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header__icons__desktop">
+            <div class="header__icons__item">
+                <img class="icon" alt="Compras" src="./assets/Compras.svg" />
+                <p>Minha sacola</p>
+            </div>
+
+            <div class="header__icons__item">
+                <img class="icon" alt="Usuario" src="./assets/Usuario.svg" />
+                <p>Meu perfil</p>
+            </div>
+        </div>
+
         <div class="header__icons">
             <img class="icon" alt="Favoritos" src="./assets/Favoritos.svg" />
             <img class="icon" alt="Compras" src="./assets/Compras.svg" />
@@ -29,136 +60,222 @@
         <input class="banner__input" type="text" placeholder="Qual será sua próxima leitura?">
     </section>
 
-    <section class="books">
+
+    <section class="releases">
         <div class="books__title-box">
             <h2>Ultimos lançamentos</h2>
         </div>
 
-        <div class="swiper" pagination-clickable="true" space-between="30">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <img class="book-img" src="assets/Guia Front-end.svg">
+        <div class="books">
+            <div class="swiper" pagination-clickable="true">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="book-img" src="assets/Guia Front-end.svg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="book-img" src="assets/ApacheKafka.svg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="book-img" src="assets/Javascript.svg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="book-img" src="assets/Lideranc╠ºa.svg">
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img class="book-img" src="assets/ApacheKafka.svg">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <div class="card card--flex">
+                <div class="card__body">
+                    <div class="card__body__texts">
+                        <p class="card__pretitle">Talvez você também se interesse por...</p>
+                        <p class="card__title">Angular 11 e Firebase</p>
+                        <p class="card__text">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <img class="card__body__image" src="/assets/Angular.svg">
                 </div>
-                <div class="swiper-slide">
-                    <img class="book-img" src="assets/Javascript.svg">
-                </div>
-                <div class="swiper-slide">
-                    <img class="book-img" src="assets/Lideranc╠ºa.svg">
+                <div class="card__footer">
+                    <div class="card__footer__icons">
+                        <img src="assets/Favoritos.svg">
+                        <img src="assets/Compras.svg">
+                    </div>
+                    <a class="card__button">Saiba mais</a>
                 </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
-
-        <div class="card card--flex">
-            <div class="card__body">
-                <div class="card__body__texts">
-                    <p class="card__pretitle">Talvez você também se interesse por...</p>
-                    <p class="card__title">Angular 11 e Firebase</p>
-                    <p class="card__text">Construindo uma aplicação integrada com a plataforma do Google.</p>
-                </div>
-                <img class="card__body__image" src="/assets/Angular.svg">
-            </div>
-            <div class="card__footer">
-                <div class="card__footer__icons">
-                    <img src="assets/Favoritos.svg">
-                    <img src="assets/Compras.svg">
-                </div>
-                <a class="card__button">Saiba mais</a>
-            </div>
-        </div>
-
     </section>
 
-    <section class="books">
+    <section class="releases">
         <div class="books__title-box">
             <h2>Ultimos lançamentos</h2>
         </div>
+        <div class="books">
+            <div class="swiper" pagination-clickable="true">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="book-img" src="assets/Guia Front-end.svg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="book-img" src="assets/ApacheKafka.svg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="book-img" src="assets/Javascript.svg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="book-img" src="assets/Lideranc╠ºa.svg">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-        <div class="swiper" pagination-clickable="true" space-between="30">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <img class="book-img" src="assets/Guia Front-end.svg">
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <div class="card card--flex">
+                <div class="card__body">
+                    <div class="card__body__texts">
+                        <p class="card__pretitle">Talvez você também se interesse por...</p>
+                        <p class="card__title">Angular 11 e Firebase</p>
+                        <p class="card__text">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <img class="card__body__image" src="/assets/Angular.svg">
                 </div>
-                <div class="swiper-slide">
-                    <img class="book-img" src="assets/ApacheKafka.svg">
-                </div>
-                <div class="swiper-slide">
-                    <img class="book-img" src="assets/Javascript.svg">
-                </div>
-                <div class="swiper-slide">
-                    <img class="book-img" src="assets/Lideranc╠ºa.svg">
+                <div class="card__footer">
+                    <div class="card__footer__icons">
+                        <img src="assets/Favoritos.svg">
+                        <img src="assets/Compras.svg">
+                    </div>
+                    <a class="card__button">Saiba mais</a>
                 </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
-
-        <div class="card card--flex">
-            <div class="card__body">
-                <div class="card__body__texts">
-                    <p class="card__pretitle">Talvez você também se interesse por...</p>
-                    <p class="card__title">Angular 11 e Firebase</p>
-                    <p class="card__text">Construindo uma aplicação integrada com a plataforma do Google.</p>
-                </div>
-                <img class="card__body__image" src="/assets/Angular.svg">
-            </div>
-            <div class="card__footer">
-                <div class="card__footer__icons">
-                    <img src="assets/Favoritos.svg">
-                    <img src="assets/Compras.svg">
-                </div>
-                <a class="card__button">Saiba mais</a>
-            </div>
-        </div>
-
     </section>
+
+    <section class="recent-topics">
+
+        <h2 class="recent-topics__title">Tópicos visitados recentemente</h2>
+
+        <ul class="recent-topics__list">
+            <li class="recent-topics__listlink">Android</li>
+            <li class="recent-topics__listlink">OO</li>
+            <li class="recent-topics__listlink">Marketing Digital</li>
+            <li class="recent-topics__listlink">Agile</li>
+            <li class="recent-topics__listlink">Startups</li>
+            <li class="recent-topics__listlink">HTML e CSS</li>
+            <li class="recent-topics__listlink">Java</li>
+            <li class="recent-topics__listlink">Python</li>
+        </ul>
+    </section>
+
+    <section class="newsletter">
+        <div>
+            <p class="newsletter__title">Fique por dentro das novidades</p>
+            <br>
+            <p class="newsletter__subtitle">Atualizações de e-books, novos livros, promoções e outros</p>
+        </div>
+
+        <input class="newsletter__input" type="text" placeholder="Cadastre seu e-mail">
+    </section>
+
+    <footer class="footer">
+        <p>Grupo Alura</p>
+        <ul class="footer__list">
+            <li class="footer__list__title">Educação</li>
+            <li>
+                <img src="/assets/Caelum.svg">
+                <p>Caelum</p>
+            </li>
+            <li>
+                <img src="/assets/CasaDoCodigo.svg">
+                <p>Casa do Código</p>
+            </li>
+        </ul>
+        <ul class="footer__list">
+            <li class="footer__list__title">
+                EDUCAÇÃO ONLINE
+            </li>
+            <li>
+                <img src="/assets/Alura.svg">
+                <p>Alura</p>
+            </li>
+            <li>
+                <img src="/assets/AluraEmpresas.svg">
+                <p>Alura Para Empresas</p>
+            </li>
+            <li>
+                <img src="/assets/AluraLATAM.svg">
+                <p>Alura LATAM</p>
+            </li>
+            <li>
+                <img src="/assets/AluraStart.svg">
+                <p>Alura Start</p>
+            </li>
+            <li>
+                <img src="/assets/MusicDot.svg">
+                <p>MusicDot</p>
+            </li>
+            <li>
+                <img src="/assets/AluraLingua.svg">
+                <p>Alura Língua</p>
+            </li>
+            <li>
+                <img src="/assets/PM3.svg">
+                <p>PM3</p>
+            </li>
+        </ul>
+
+        <ul class="footer__list">
+            <li class="footer__list__title">COMUNIDADE</li>
+            <li>
+                <img src="/assets/HipstersTech.svg">
+                <p>Hipsters ponto Tech</p>
+            </li>
+            <li>
+                <img src="/assets/ScubaDev.svg">Scuba Dev
+            </li>
+            <li>
+                <img src="/assets/LayersTech.svg">
+                <p>Layers ponto Tech</p>
+            </li>
+            <li>
+                <img src="/assets/LikeABoss.svg">
+                <p>Like a Boss</p>
+            </li>
+            <li>
+                <img src="/assets/CarreiraSemFronteira.svg">
+                <p>Carreira sem Fronteira</p>
+            </li>
+            <li>
+                <img src="/assets/HipstersJobs.svg">
+                <p>Hipsters ponto Jobs</p>
+            </li>
+            <li>
+                <img src="/assets/GUJ.svg">
+                <p>GUJ</p>
+            </li>
+        </ul>
+    </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'horizontal',
-
-            loop: true,
-            slidesPerView: 2,
-            centeredSlides:true,
-            spaceBetween: 19,
-            slideToClickedSlide: true,
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            clickable: true,
-                type: 'bullets'
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+    <script src="scripts/carrousel.js"></script>
 </body>
 
 </html>
